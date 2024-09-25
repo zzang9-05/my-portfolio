@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* reset - 브라우저에서 잡고있는 기본 style을 모두 초기화 */
+html, body, h1, h2, h3, h4, h5, h6, div, p, ul, ol, li, dl, dt, dd, address, blockquote, table, caption, tr, th, td, thead, tbody, tfoot, form, fieldset, legend,
+header, main, section, article, aside, figure, figcaption, nav, footer {margin: 0; padding: 0;}
+
+header, main, section, article, aside, figure, figcaption, nav, footer {
+    display: block;
+}
+
+li {list-style-type: none;} /* 글머리기호 초기화 */
+a {text-decoration: none; color: inherit;}
+em, i, cite, address {font-style: normal;}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+label, img, input, select, textarea, button, a {vertical-align: middle;}
+button {cursor: pointer;}
+img, fieldset, input, select, textarea, button {border: none;}
+
+.blind {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.clear:before,
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color: rgba(0,0,0,0.8);
+    font-weight: 400;
+}

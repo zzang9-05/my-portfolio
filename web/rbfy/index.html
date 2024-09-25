@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rbfy. (ReBuyForYou)</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rbfy.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> <!-- 스크립트 링크 중에서는 가장 상단에 써주어야 제대로 작동이 가능함! -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="skip_event">
+            회원가입 시 50,000원 할인쿠폰팩 지급
+            <button class="btn_close">&times;<!-- 닫기버튼 특수기호 --></button>
+        </div>
+
+        <header>
+            <a href="#" class="btn_mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="#" class="sub_event">EVENT</a>
+            <h1 class="logo">
+                <a href="index.html"><span class="blind">Rbfy 로고</span></a>
+            </h1>
+            <div class="util_link">
+                <a href="#" class="btn_search">
+                    <img src="img/img_search83.png" alt="상품검색" title="상품검색">
+                </a>
+                <a href="#" class="btn_mypage">
+                    <img src="img/img_mypage.png" alt="마이페이지" title="마이페이지">
+                </a>
+                <a href="#" class="btn_cart">
+                    <img src="img/img_cart.png" alt="장바구니" title="장바구니">
+                </a>
+            </div>
+            <div class="sub_header">
+                <div class="sub_inner">
+                    <a href="#" class="btn_mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub_event">EVENT</a>
+                    <h1 class="logo">
+                        <a href="index.html"><span class="blind">Rbfy 로고</span></a>
+                    </h1>
+                    <div class="util_link">
+                        <a href="#" class="btn_search">
+                            <img src="img/img_search83.png" alt="상품검색" title="상품검색">
+                        </a>
+                        <a href="#" class="btn_mypage">
+                            <img src="img/img_mypage.png" alt="마이페이지" title="마이페이지">
+                        </a>
+                        <a href="#" class="btn_cart">
+                            <img src="img/img_cart.png" alt="장바구니" title="장바구니">
+                        </a>
+                    </div>
+                </div>
+                <div class="gnb_wrap">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#"><h3>Brand</h3></a>
+                            <ul class="sub_list">
+                                <li><a href="#">스토리</a></li>
+                                <li><a href="#">제품철학</a></li>
+                                <li><a href="#">감사를 나눠요</a></li>
+                                <li><a href="#">마음을 선물해요</a></li>
+                                <li><a href="#">이야기 해주세요</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><h3>Shop</h3></a>
+                            <ul class="sub_list">
+                                <li><a href="#"><span>Rbfy pick</span></a></li>
+                                <li><a href="#"><span>Best seller</span></a></li>
+                                <li><a href="#"><span>Life</span></a></li>
+                                <li><a href="#">전체상품</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">클렌징</a></li>
+                                <li><a href="#">메이크업</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><h3>Review</h3></a></li>
+                        <li>
+                            <a href="#"><h3>Community</h3></a>
+                            <ul class="sub_list">
+                                <li><a href="#">멤버쉽 혜택</a></li>
+                                <li><a href="#">아카이브</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">문의하기</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="weekend_best">
+                        <h3>Weekend best product</h3>
+                        <ul class="weekend_best_list">
+                            <li>
+                                <a href="#">
+                                    <figure></figure>
+                                    <div class="text">
+                                        <span>1st</span>
+                                        <p>컨트롤로션 UV 쉴드</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure></figure>
+                                    <div class="text">
+                                        <span>2nd</span>
+                                        <p>데일리앰플패드</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure></figure>
+                                    <div class="text">
+                                        <span>3rd</span>
+                                        <p>컨트롤로션</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="main_visual">
+            <!-- Swiper -->
+            <div class="swiper rbfy_visual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/img_main08.jpg" alt="">
+                        <div class="main_title">
+                            <p class="s_title">자연을 누릴 수 있게 하는<br>피부 진정의 힘, 7초[草]패드</p>
+                            <b>NATURE IS WELCOME<br>UP TO 38%</b>
+                            <p class="date">6/13(목) 2PM - 7/12(금) 4PM</p>
+                            <a href="#" class="btn_view_more">view more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img_main09.jpg" alt="">
+                        <div class="main_title">
+                            <p class="s_title">7가지 초(草)를 담은 고농축 앰플과<br>자연 그대로의 원물이 담긴 3중 특수패드</p>
+                            <b>데일리앰플 패드</b>
+                            <a href="#" class="btn_view_more">view more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img_main04.jpg" alt="">
+                        <div class="main_title">
+                            <p class="s_title">보습과 자외선 차단을 한 번에<br>온 가족 수분 진정 선로션</p>
+                            <b>컨트롤로션 UV 쉴드</b>
+                            <a href="#" class="btn_view_more">view more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img_main07.jpg" alt="">
+                        <div class="main_title">
+                            <p class="s_title">피부 속부터 차오르는 수분으로<br>다시 태어난 듯 촉촉한 피부</p>
+                            <b>리본 크림</b>
+                            <a href="#" class="btn_view_more">view more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/img_main11.jpg" alt="">
+                        <div class="main_title">
+                            <p class="s_title">온 가족이 함께 안심하고 쓰는<br>순한 피부 보습</p>
+                            <b>컨트롤 로션</b>
+                            <a href="#" class="btn_view_more">view more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- //main_visual -->
+
+        <section id="sc_life">
+            <div class="inner">
+                <div class="sc_title">
+                    <p class="title">You are life, Rbfy</p>
+                    <p class="text">당신은 소중합니다.</p>
+                    <a href="#" class="btn_view">view more</a>
+                </div>
+                <div class="sc_video" style="max-width: calc(323.232vh); height: calc(30.9375vw);">
+                    <iframe src="https://player.vimeo.com/video/956984215?autoplay=1&loop=1&autopause=0&background=1&muted=1&title=0" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- //sc_life -->
+
+        <section id="product">
+            <h2>Rbfy Product</h2>
+            <ul class="product_list">
+                <li class="active"><a href="#">7초[草]라인</a></li>
+                <li><a href="#">New Arrival</a></li>
+                <li><a href="#">Best Seller</a></li>
+                <li><a href="#">Steady Seller</a></li>
+            </ul>
+            
+            <div class="product_wrap">
+                <div class="product01 active">
+                    <p class="text">자연을 누리게 하는 7초[草] 진정의 힘</p>
+                    <ul>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_product_7line01.jpg" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[UP TO 30%] 7초(草)세트</p>
+                                    <p class="desc">강력한 피부 진정<br>#7초[草]세트</p>
+                                    <p class="price">
+                                        <del>79,000원</del>
+                                        <ins>55,300원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(9994)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_product_7line02.jpg" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[UP TO 38%] 데일리앰플세트</p>
+                                    <p class="desc">간편한 피부 진정케어<br>#7초[草]패드</p>
+                                    <p class="price">
+                                        <del>54,000원</del>
+                                        <ins>39,400원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(10281)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_product_7line03.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[UP TO 35%] 데일리앰플카밍마스크팩</p>
+                                    <p class="desc">자극받은 피부, 스페셜 진정<br>#7초[草]마스크팩[1BOX/5EA]</p>
+                                    <p class="price">
+                                        <del>25,000원</del>
+                                        <ins>19,500원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(9995)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product02">
+                    <p class="text">자신있는 신제품 추천해요.</p>
+                    <ul>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_new_arrival01.jpg" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 컨트롤 로션 UV 쉴드</p>
+                                    <p class="desc">SPF 45 PA+++<br>#온가족선크림</p>
+                                    <p class="price">
+                                        <del>25,000원</del>
+                                        <ins>22,500원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(1426)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_new_arrival02.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 코어비타레디언스앰플</p>
+                                    <p class="desc">항산화 시너지 효과를 위한 최적의 비율<br>#항산화비타앰플</p>
+                                    <p class="price">
+                                        <del>47,000원</del>
+                                        <ins>42,300원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.8</span>
+                                        <span class="count_num">(3148)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_new_arrival03.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 광채리본미스트</p>
+                                    <p class="desc">광채크림을 한 통에 담은<br>#광채미스트</p>
+                                    <p class="price">
+                                        <del>34,000원</del>
+                                        <ins>30,600원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(1724)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product03">
+                    <p class="text">베스트 상품 추천해요.</p>
+                    <ul>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_best_seller01.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[15%] 컨트롤로션</p>
+                                    <p class="desc">아이부터 어른까지<br>#온가족로션</p>
+                                    <p class="price">
+                                        <del>29,000원</del>
+                                        <ins>24,600원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(20464)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_best_seller02.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 코어레이어밸런싱에센스</p>
+                                    <p class="desc">코어부터 탄탄하게 완벽케어<br>#코어탄력에센스</p>
+                                    <p class="price">
+                                        <del>35,000원</del>
+                                        <ins>31,500원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(3757)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_best_seller03.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 리본크림</p>
+                                    <p class="desc">촉촉하게 다시 태어나는 피부<br>#만능수분크림</p>
+                                    <p class="price">
+                                        <del>38,000원</del>
+                                        <ins>34,200원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(13676)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product04">
+                    <p class="text">꾸준히 사랑받는 상품 추천해요.</p>
+                    <ul>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_steady_seller01.jpg" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 미네랄토너</p>
+                                    <p class="desc">닦아내고 수분을 채우는<br>#각질토너</p>
+                                    <p class="price">
+                                        <del>31,000원</del>
+                                        <ins>27,900원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(5407)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_steady_seller02.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 클렌징듀오 2종</p>
+                                    <p class="desc">깨끗하고 건강한 피부를 위한<br>#클렌징듀오 2종</p>
+                                    <p class="price">
+                                        <del>48,600원</del>
+                                        <ins>43,700원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.9</span>
+                                        <span class="count_num">(3940)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/img_steady_seller03.png" alt="">
+                                </figure>
+                                <div class="text_area">
+                                    <p class="p_title">[10%] 워터글로우핏쿠션</p>
+                                    <p class="desc">촉촉하게 얇게 밀착되는<br>#광채쿠션</p>
+                                    <p class="price">
+                                        <del>29,000원</del>
+                                        <ins>26,100원</ins>
+                                    </p>
+                                    <p class="rate_star">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                                <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                                <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="count">4.8</span>
+                                        <span class="count_num">(3509)</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //product_wrap -->
+
+        <section id="sc_visual">
+            <div class="main_title">
+                <p class="s_text">데일리앰플패드</p>
+                <p class="b_text">7초[草] 고농축 앰플과 병풀 패드가 만나 <br>온 가족 민감 피부 진정케어</p>
+            </div>
+        </section>
+        <!-- //sc_visual -->
+
+        <section id="review">
+            <h2>Real Review</h2>
+            <p class="text">제품의 실제 사용후기를 확인하세요.</p>
+            <ul class="review_list">
+                <li>
+                    <a href="#">
+                        <figure><img src="img/img_real_review01.png" alt=""></figure>
+                        <div class="text_area">
+                            <p class="p_title">데일리앰플패드</p>
+                            <p class="desc">간편한 피부 진정케어<br>#7초[草]패드</p>
+                            <p class="rate_star">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                        <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                        <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                    </svg>
+                                </span>
+                                <span class="count">4.9</span>
+                                <span class="count_num">(10375)</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="img/img_real_review02.png" alt=""></figure>
+                        <div class="text_area">
+                            <p class="p_title">[10%] 코어비타레디언스앰플</p>
+                            <p class="desc">항산화 시너지 효과를 위한 최적의 비율<br>#항산화비타앰플</p>
+                            <p class="rate_star">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                        <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                        <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                    </svg>
+                                </span>
+                                <span class="count">4.8</span>
+                                <span class="count_num">(3172)</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="img/img_real_review03.png" alt=""></figure>
+                        <div class="text_area">
+                            <p class="p_title">원스텝클렌징오일</p>
+                            <p class="desc">98%의 세정력으로<br>#블랙헤드케어</p>
+                            <p class="rate_star">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                        <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                        <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                    </svg>
+                                </span>
+                                <span class="count">4.9</span>
+                                <span class="count_num">(1954)</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure><img src="img/img_real_review04.jpg" alt=""></figure>
+                        <div class="text_area">
+                            <p class="p_title">리본크림</p>
+                            <p class="desc">촉촉하게 다시 태어나는 피부<br>#만능수분크림</p>
+                            <p class="rate_star">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
+                                        <path fill="none" d="M0 0H12V18H0z" transform="translate(0)"></path>
+                                        <path fill="#ffc144" d="M6.294 9.19l-3.709 1.893.708-4.01-3-2.84 4.147-.585L6.294 0l1.854 3.648 4.146.585-3 2.84.706 4.01z" transform="translate(-0.294 3.664)"></path>
+                                    </svg>
+                                </span>
+                                <span class="count">4.9</span>
+                                <span class="count_num">(13676)</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- //review -->
+
+        <section id="sns_area">
+            <h2>@rebuyforyou_official <span><img src="img/ico_instaoffi.svg" alt="instagram"></span></h2>
+            <ul class="insta_list">
+                <li>
+                    <a href="#">
+                        <img src="img/img_instagram08.jpg" alt="giftbox">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img_instagram10.jpg" alt="family sun">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img_instagram09.jpg" alt="control lotion uv shleld">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img_instagram11.jpg" alt="ampule">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/img_instagram12.png" alt="giftbox2">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- //insta_area -->
+
+        <footer>
+            <div class="f_cont01">
+                <span><img src="img/logo_img328.png" alt="logo"></span>
+                <div class="f_right">
+                    <div class="sns_icon">
+                        <a href="#" target="_blank" title="새창으로 열기">
+                            <img src="img/ico_kakaotalk_w.png" alt="kakaotalk">
+                        </a>
+                        <a href="#" target="_blank" title="새창으로 열기">
+                            <img src="img/img_youtube.png" alt="youtube">
+                        </a>
+                        <a href="#" target="_blank" title="새창으로 열기">
+                            <img src="img/ico_insta_w.png" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="family_site">
+                        <a href="#">Family Site</a>
+                        <span>오필리</span>
+                    </div>
+                </div>
+            </div>
+            <!-- //f_cont01 -->
+            <div class="f_cont02">
+                <div>
+                    <span class="f_menu">Customer Center</span>
+                    <p>
+                        <strong class="call">1577-6722</strong>
+                        <span>Mon-Fri 10-17 (LUNCH: 12:00-13:00)</span>
+                        <span>OFF SAT, SUN AND HOLIDAY</span>
+                    </p>
+                </div>
+                <div>
+                    <span class="f_menu">Account</span>
+                    <p>
+                        <span>예금주 (주)에이치유지</span>
+                        <span>기업 345-135410-04-051</span>
+                        <span>국민 760701-04-326818</span>
+                        <span>신한 140-014-236837</span>
+                    </p>
+                </div>
+                <div>
+                    <span class="f_menu">Shipping & Return Center</span>
+                    <p>
+                        <span>경기도 화성시 장안면 수촌리 22-19 지하1층 에이치유지 앞</span>
+                    </p>
+                </div>
+                <div>
+                    <span class="f_menu">Shopping guide</span>
+                    <p>
+                        <a href="#">공지사항</a>
+                        <a href="#">Q&A</a>
+                        <a href="#">리뷰</a>
+                        <a href="#">주문조회</a>
+                    </p>
+                </div>
+            </div>
+            <!-- //f_cont02 -->
+
+            <div class="f_cont03">
+                <p>
+                    <span class="line">주식회사 에이치유지</span>
+                    <span class="line">대표 : 황태환,박미연</span>
+                    <span class="line">사업자등록번호 : 375-81-00863</span>
+                    <span>통신판매업 신고 : 2023-서울서초-0343</span>
+                    <span>주소: 06614 서울특별시 서초구 서초대로77길 17 (서초동) BLOCK77 12층 16호</span>
+                    <br>
+                    <a href="#" class="line">개인정보처리방침</a>
+                    <a href="#" class="line">이용약관</a>
+                    <a href="#" class="line">이용안내</a>
+                    <a href="#">개인정보보호책임자: PARK SUNG YEON (rebuyforyou@hugcorp.co.kr)</a>
+                </p>
+                <p class="copy">
+                    Copyright &copy; REBUYFORYOU. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

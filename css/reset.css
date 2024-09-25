@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Play:wght@400;700&display=swap');
+
+/* reset - 브라우저에서 잡고있는 기본 스타일을 모두 초기화 시켜주는 작업*/
+/* => 구조 태그 */
+html, body, h1, h2, h3, h4, h5, h6, div, p, ul, ol, li, dl, dt, dd, address, blockquote, header, main, section, article, aside, figure, figcaption, nav, footer, table, caption, tr, th, td, thead, tbody, tfoot, form, fieldset, legend  {margin: 0; padding: 0;}
+header, main, section, article, aside, figure, figcaption, nav, footer  {display: block;}
+
+li  {list-style-type: none;} /* 글머리기호 초기화 */
+a   {text-decoration: none; color: inherit;}
+em, i, cite,/* cite 출처를 알려주는 태그 */ address {font-style: normal;}
+table   {border-collapse: collapse;}
+/* 로고를 bg로 처리했을 때, alt 역할을 해주는 span을 이미지가 정상적으로 잘 보이고 있을 경우 가려주는 역할! */
+.blind  {
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+/* float를 해제할 때 사용하는 가상선택자! */
+.clear:before,
+.clear:after  {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body    {
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
