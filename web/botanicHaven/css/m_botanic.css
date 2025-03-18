@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+header {
+    height: 70px;
+}
+header .btn_mobile {
+    display: block;
+    width: 34px;
+}
+header .logo {
+    font-size: 34px;
+}
+header .logo > a    {
+    line-height: 70px;
+}
+
+/* gnb */
+ header .nav_inner {
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 70px; right: -100%;
+    height: calc(100vh - 70px);
+    background: #fff;
+}
+.nav_inner .gnb {
+    display: block;
+    width: 56%;
+    margin: 0 auto;
+    padding: 60px 0 0;
+    box-sizing: border-box;
+}
+.nav_inner .gnb > li {
+    width: 100%;
+}
+.nav_inner .gnb > li > a {
+    font-size: 20px;
+}
+.nav_inner .gnb > li:hover .sub {
+    display: none;
+}
+/* sns */
+.nav_inner .sns_area {
+    position: absolute;
+    display: block;
+    bottom: 100px; 
+    width: 100%;
+    text-align: center;
+}
+.nav_inner .sns_area > a {
+    display: inline-block;
+    width: 44px;
+    margin: 0 25px;
+}
+.nav_inner .sns_area > a > img {
+    width: 100%;
+}
+
+
+/* swiper */
+.swiper.main_visual {
+    height: 50vh;
+    margin-bottom: 0;
+}
+.swiper-slide .title_area {
+    width: 85%;
+    padding: 20px;
+}
+.swiper-slide .title_area .m_title {
+    font-size: 40px;
+}
+
+
+/* section */
+section {
+    padding: 40px 15px 40px;
+    box-sizing: border-box;
+}
+section h2  {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* section-new_product */
+.new_product_list   {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.new_product_list li    {
+    width: 48.5%;
+    padding: 10px;
+    margin-bottom: 1.5%;
+}
+.new_product_list li figure {
+    height: 240px;
+}
+.new_product_list .text_area .cate  {
+    margin-bottom: 20px;
+}
+
+/* event */
+#event  {
+    height: 200px;
+}
+#event strong   {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+#event .s_text  {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#event .desc    {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* interior */
+.interior   {
+    display: block;
+}
+#interior li    {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#interior li > a    {
+    display: flex;
+    align-items: center;
+}
+#interior li figure {
+    margin: 0; 
+    width: 180px;
+    height: 180px;
+}
+#interior .text_area    {
+    width: calc(100% - 180px - 25px);
+    margin-left: 25px;
+}
+
+/* footer */
+footer  {
+    padding: 20px 0;
+}
+footer .inner   {
+    display: block;
+    align-items: center;
+}
+footer .inner .flogo    {text-align: center;}
+footer .inner .f_right  {
+    width: 100%;
+    text-align: center;
+}
+footer .inner .f_right .call    {
+    font-size: 20px;
+}
+
+/* 440이하 */
+@media screen and (max-width: 440px) {
+    header .logo {
+        font-size: 30px;
+    }
+    header .btn_mobile  {
+        width: 30px;
+        height: 30px;
+    }
+    .swiper.swiper.main_visual  {
+        height: 40vh;
+    }
+    .swiper-slide .title_area   {
+        display: none;
+    }
+
+    /* section */
+    section {padding: 25px 10px 25px;}
+    section h2 {
+        font-size: 22px;
+    }
+    section .text   {
+        font-size: 15px;
+    }
+
+    /* section-new_product */
+    .new_product_list   {
+        display: block;
+    }
+    .new_product_list li    {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1.5%;
+    }
+    .new_product_list li > a {
+        display: flex;
+        justify-content: space-between;
+    }
+    .new_product_list li figure {
+        width: 40%;
+        height: 180px;
+    }
+    .new_product_list .text_area {
+        width: 52%;
+        margin-left: 8%;
+    }
+    .new_product_list .text_area span {
+        margin-bottom: 10px;
+    }
+    .new_product_list .text_area strong {
+        display: block;
+    }
+    .new_product_list li:hover {
+        border: none;
+    }
+
+    /* interior */
+    .interior   {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #interior li    {
+        width: 47.5%;
+        margin-bottom: 20px;
+    }
+    #interior li > a    {
+        display: block;
+    }
+    #interior li figure {
+        margin: 0 auto 20px; 
+        width: 160px;
+        height: 160px;
+    }
+    #interior .text_area    {
+        width: 100%;
+        margin-left: 0;
+    }
+    #interior li .title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #interior li .text  {
+        display: none;
+    }
+}

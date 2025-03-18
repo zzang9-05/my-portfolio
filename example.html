@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        .tab-content {
+            display: none;
+            /* 기본적으로 숨김 */
+        }
+
+        .tab-content.current {
+            display: block;
+            /* 현재 선택된 탭 콘텐츠만 보이게 함 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="designTop">
+        <div class="imgWrapper">
+            <img src="img/designArtwork.png" alt="design artwork">
+        </div>
+        <div class="swiper myDesign">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-tab="tab1">Slide 1</div>
+                <div class="swiper-slide" data-tab="tab2">Slide 2</div>
+                <div class="swiper-slide" data-tab="tab3">Slide 3</div>
+                <div class="swiper-slide" data-tab="tab4">Slide 4</div>
+                <div class="swiper-slide" data-tab="tab5">Slide 5</div>
+                <div class="swiper-slide" data-tab="tab6">Slide 6</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <!-- Tab Contents -->
+    <div class="tab-content" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2">Content for Tab 2</div>
+    <div class="tab-content" id="tab3">Content for Tab 3</div>
+    <div class="tab-content" id="tab4">Content for Tab 4</div>
+    <div class="tab-content" id="tab5">Content for Tab 5</div>
+    <div class="tab-content" id="tab6">Content for Tab 6</div>
+
+    <script>
+        $(document).ready(function () {
+            const swiper = new Swiper('.myDesign', {
+                slidesPerView: 5,
+                spaceBetween: 0,
+                centeredSlides: true, // 슬라이드 중앙 정렬
+                slidesPerView: 'auto', // 자동으로 슬라이드 크기 조정
+                on: {
+                    transitionEnd: function () {
+                        // 현재 활성화된 슬라이드의 인덱스 가져오기
+                        const activeIndex = this.activeIndex;
+                        const tab_id = $(this.slides[activeIndex]).attr('data-tab');
+
+                        // 모든 탭 콘텐츠 숨기기
+                        $('.tab-content').removeClass('current');
+
+                        // 해당 탭 콘텐츠 보이기
+                        $("#" + tab_id).addClass('current');
+                    }
+                },
+                preventClicks: false,
+                preventClicksPropagation: false,
+                loop: true,
+                speed: 600,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 4000, // 3초마다 자동으로 넘어감
+                    disableOnInteraction: false, // 사용자 상호작용 후에도 autoplay 유지
+                }
+            });
+
+            // 초기 상태로 첫 번째 탭 콘텐츠 보이기
+            $('.tab-content').first().addClass('current');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,39 +1,783 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주리 웹 디자인&웹 퍼블리셔 포트폴리오</title>
-    <style>
-        *   {padding: 0; margin: 0;}
-        body    {
-            height: 10vh;
-            margin: 200px;
-            background: indianred;
-        }
-        h1  {color: #fff;}
-        li  {list-style-type: none;}
-        a   {
-            text-decoration: none;
-            color: #fff;
-            font-size: 20px;
-        }
-    </style>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Juri's Portfolio</title>
+    <link rel="stylesheet" href="css/reset(N).css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="icon" href="img/favicon1-2.ico">
+    <link rel="shortcut icon" href="img/favicon1-2.ico">
+    <script src="js/jquery-3.7.1.min.js"></script>
+
 </head>
+
 <body>
-    <h1>우리집</h1>
-    <div class="btn_area">
-        <h2>디자인</h2>
-        <a href="img/bg_about_car.png" target="_blank">메인시안</a>
-        <a href="img/bg_about_car.png" target="_blank">이메일 이벤트 디자인</a>
+    <div id="wrap">
+        <div id="loading">
+            <img src="img/loading bar.gif" alt="로딩바">
+        </div>
+        <section id="title">
+            <div class="title_bg">
+                <div class="titleText">
+                    <h1 class="BigTitle">
+                        안녕하세요.<br>
+                        모든 곳에서 소소한 <span class="happy">행복</span>을 찾는<br>
+                        신입 웹 디자이너 / 웹 퍼블리셔 <span class="happy happyB"><img src="img/name.png" alt="정주리"></span>입니다.
+                    </h1>
+                    <p class="ps">p.s. 하루에 3번 하늘을 본다면, <span class="happy">행복</span>한 사람이래요. 벌써 두 번 보셨네요!</p>
+                </div>
+                <div class="deco">
+                    <img src="img/clouttoncandydeco/W_clouttonCandy.png" alt="cloutton candy(round squre)" class="squre"
+                        style="opacity: 0.4; transform: rotate(-21.76deg);">
+                    <img src="img/clouttoncandydeco/W_clouttonCandy_ellipse.png" alt="cloutton candy(ellipse)"
+                        class="ellipse" style="opacity: 0.25; transform: rotate(67.55deg);">
+                    <img src="img/clouttoncandydeco/W_clouttonCandy_arc2.png" alt="cloutton candy(arc)" class="arc"
+                        style="opacity: 0.5; transform: rotate(-75deg);">
+                </div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+            <header>
+                <div class="gnbArea">
+                    <h1 class="logo" data-index="0"><a href="#">주리's 포트폴리오</a></h1>
+                    <nav>
+                        <ul class="gnb">
+                            <li>
+                                <a href="#about" data-index="1">about</a>
+                            </li>
+                            <li>
+                                <a href="#coding" data-index="2">coding</a>
+                            </li>
+                            <li>
+                                <a href="#proposal" data-index="3">proposal</a>
+                            </li>
+                            <li>
+                                <a href="#design" data-index="4">design</a>
+                            </li>
+                            <li>
+                                <a href="#contact" data-index="5">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="color">
+                <span class="white"></span>
+                <span class="pink"></span>
+                <span class="blue"></span>
+            </div>
+        </section>
+        <!-- //main -->
+        <section id="about">
+            <div class="profile">
+                <h2><img src="img/introduceMyselfH2.png" alt="introduce myself"></h2>
+                <img src="img/introduceArrow.png" alt="">
+                <div class="infoText">
+                    <div class="left info">
+                        <p class="name"><span>NAME</span>정주리</p>
+                        <p class="phone"><span>PHONE</span>010-5118-7196</p>
+                        <div class="education">
+                            <span>EDUCATION</span>
+                            <ul class="list">
+                                <li>
+                                    <strong>서울여자대학교 졸업</strong>
+                                    <p>주 전공 => 일어일문학과</p>
+                                    <p>복수 전공 => 디지털융합경영전공</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skills">
+                            <span>SKILLS</span>
+                            <ul>
+                                <li><img src="img/skills/logo_html5.png" alt="html5"></li>
+                                <li><img src="img/skills/logo_css3.png" alt="css3"></li>
+                                <li><img src="img/skills/logo_js.png" alt="javascript"></li>
+                                <li><img src="img/skills/logo_jquery.png" alt="jQuery"></li>
+                                <li><img src="img/skills/logo_react.png" alt="react"></li>
+                                <li><img src="img/skills/logo_photoshop.png" alt="photoshop"></li>
+                                <li><img src="img/skills/logo_illustrator.png" alt="illustrator"></li>
+                                <li><img src="img/skills/logo_figma.png" alt="figma"></li>
+                                <li><img src="img/skills/logo_git.png" alt="git"></li>
+                                <li><img src="img/skills/logo_vscode.png" alt="vscode"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right info">
+                        <p class="birth"><span>BIRTH</span>1997.06.05</p>
+                        <p class="e-mail"><span>E-MAIL</span>timh2@kakao.com</p>
+                        <div class="training">
+                            <span>TRAINING</span>
+                            <ul class="list">
+                                <li>
+                                    <strong>[디지털디자인] 웹디자인 & 웹퍼블리셔 (React) B</strong>
+                                    <p>2024-05-27 ~ 2024-10-28 <br>(NCS 760시간 수료)</p>
+                                </li>
+                                <li>
+                                    <strong>18174_(8)문화콘텐츠 유통(MD)2 (HRD센터)</strong>
+                                    <p>2018-12-26 ~ 2019-02-20 (수료)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="certificate">
+                            <span>CERTIFICATE</span>
+                            <ul class="list">
+                                <li>JLPT N2 (2021.09 취득)</li>
+                                <li>JPT 635점 (2021.09 취득)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="profilePic">
+                <img src="img/ProfileImg.png" alt="ProfileImg" class="myPhoto">
+                <img src="img/clouttonCandy.png" alt="mascot" class="clouttonCandy">
+            </div>
+        </section>
+        <section id="coding">
+            <div class="category">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">전체</li>
+                    <li class="tab-link" data-tab="tab-2">클론코딩</li>
+                    <li class="tab-link" data-tab="tab-3">리디자인</li>
+                    <li class="tab-link" data-tab="tab-4">자체제작</li>
+                </ul>
+            </div>
+            <div id="tab-1" class="mainContent tab-content current">
+                <!-- Swiper -->
+                <div class="swiper myCoding">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="#"><img src="img/youngmil.png" alt="청년떡집 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">리디자인</span>
+                                    <h2 class="projectName">청년 떡집</h2>
+                                    <p class="hashtag">#깔끔 #색감 #YOUNG #MZ</p>
+                                    <p class="desc">
+                                        떡이 먹고 싶어서 검색하다가 우연히 발견한 사이트! <br>
+                                        청년떡집이라는 YOUNG한 브랜드 이미지에 맞지 않게 획일화된 쇼핑몰 레이아웃을 보고 <br>
+                                        약간의 킥을 넣어보면 어떨까? 하는 생각에서 리디자인 해보았습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 반응형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">html, css, jQuery, plugin (Swiper Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png" alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/rbfy/rbfy.html"><img src="img/mockup_rbfy.png" alt="리바이포유 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">rbfy (리바이포유) 메인 페이지</h2>
+                                    <p class="hashtag">#모던 #세련된 #쇼핑몰 #편안한</p>
+                                    <p class="desc">
+                                        일반적인 쇼핑몰 사이트의 레이아웃을 공부해보자! 하고 도전한 사이트 <br>
+                                        유명 브랜드보다는 다소 덜 화려하지만 간결하고 편안하고 포근한 브랜드 이미지에 맞춰 <br>
+                                        모던하고 세련된 상품 이미지에 시선이 가는 리바이포유 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">html, css, jQuery, plugin (Swiper Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png" alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="contribution">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="tab-2" class="mainContent tab-content">
+                <!-- Swiper -->
+                <div class="swiper myCoding">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/rbfy/rbfy.html"><img src="img/mockup_rbfy.png" alt="리바이포유 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">rbfy (리바이포유) 메인 페이지</h2>
+                                    <p class="hashtag">#모던 #세련된 #쇼핑몰 #편안한</p>
+                                    <p class="desc">
+                                        일반적인 쇼핑몰 사이트의 레이아웃을 공부해보자! 하고 도전한 사이트 <br>
+                                        유명 브랜드보다는 다소 덜 화려하지만 간결하고 편안하고 포근한 브랜드 이미지에 맞춰 <br>
+                                        모던하고 세련된 상품 이미지에 시선이 가는 리바이포유 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">html, css, jQuery, plugin (Swiper Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png" alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/rbfy/rbfy.html"><img src="img/mockup_rbfy.png" alt="리바이포유 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">rbfy (리바이포유) 메인 페이지</h2>
+                                    <p class="hashtag">#모던 #세련된 #쇼핑몰 #편안한</p>
+                                    <p class="desc">
+                                        일반적인 쇼핑몰 사이트의 레이아웃을 공부해보자! 하고 도전한 사이트 <br>
+                                        유명 브랜드보다는 다소 덜 화려하지만 간결하고 편안하고 포근한 브랜드 이미지에 맞춰 <br>
+                                        모던하고 세련된 상품 이미지에 시선이 가는 리바이포유 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">html, css, jQuery, plugin (Swiper Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png" alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">클론코딩</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="contribution">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="tab-3" class="mainContent tab-content">
+                <!-- Swiper -->
+                <div class="swiper myCoding">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="#"><img src="img/youngmil.png" alt="청년떡집 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">리디자인</span>
+                                    <h2 class="projectName">청년 떡집</h2>
+                                    <p class="hashtag">#깔끔 #색감 #YOUNG #MZ</p>
+                                    <p class="desc">
+                                        떡이 먹고 싶어서 검색하다가 우연히 발견한 사이트! <br>
+                                        청년떡집이라는 YOUNG한 브랜드 이미지에 맞지 않게 획일화된 쇼핑몰 레이아웃을 보고 <br>
+                                        약간의 킥을 넣어보면 어떨까? 하는 생각에서 리디자인 해보았습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 반응형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">html, css, jQuery, plugin (Swiper Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png" alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">리디자인</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="#"><img src="img/youngmil.png" alt="청년떡집 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">리디자인</span>
+                                    <h2 class="projectName">청년 떡집</h2>
+                                    <p class="hashtag">#깔끔 #색감 #YOUNG #MZ</p>
+                                    <p class="desc">
+                                        떡이 먹고 싶어서 검색하다가 우연히 발견한 사이트! <br>
+                                        청년떡집이라는 YOUNG한 브랜드 이미지에 맞지 않게 획일화된 쇼핑몰 레이아웃을 보고 <br>
+                                        약간의 킥을 넣어보면 어떨까? 하는 생각에서 리디자인 해보았습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 반응형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">Photoshop, html, css, jQuery, plugin (Swiper
+                                            Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png" alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">리디자인</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="contribution">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="tab-4" class="mainContent tab-content">
+                <!-- Swiper -->
+                <div class="swiper myCoding">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/"><img src="img/youngmil.png" alt="청년떡집 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">자체제작</span>
+                                    <h2 class="projectName">청년 떡집</h2>
+                                    <p class="hashtag">#깔끔 #색감 #YOUNG #MZ</p>
+                                    <p class="desc">
+                                        떡이 먹고 싶어서 검색하다가 우연히 발견한 사이트! <br>
+                                        청년떡집이라는 YOUNG한 브랜드 이미지에 맞지 않게 획일화된 쇼핑몰 레이아웃을 보고 <br>
+                                        약간의 킥을 넣어보면 어떨까? 하는 생각에서 리디자인 해보았습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 반응형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">html, css, jQuery, plugin (Swiper Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png"
+                                        alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">자체제작</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="#"><img src="img/youngmil.png" alt="청년떡집 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">자체제작</span>
+                                    <h2 class="projectName">청년 떡집</h2>
+                                    <p class="hashtag">#깔끔 #색감 #YOUNG #MZ</p>
+                                    <p class="desc">
+                                        떡이 먹고 싶어서 검색하다가 우연히 발견한 사이트! <br>
+                                        청년떡집이라는 YOUNG한 브랜드 이미지에 맞지 않게 획일화된 쇼핑몰 레이아웃을 보고 <br>
+                                        약간의 킥을 넣어보면 어떨까? 하는 생각에서 리디자인 해보았습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 반응형</strong>
+                                        <strong class="size">=> 1920px : PC 버전 / 440px : 모바일 버전</strong>
+                                        <strong class="tools">Photoshop, html, css, jQuery, plugin (Swiper
+                                            Demos)</strong>
+                                        <strong class="tools">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-contents">
+                                <a href="web/brianImpact/index.html"><img src="img/brianImpact_PC.png"
+                                        alt="브라이언임팩트 목업"></a>
+                                <div class="contentsText">
+                                    <span class="cateblue">자체제작</span>
+                                    <h2 class="projectName">브라이언임팩트</h2>
+                                    <p class="hashtag">#깔끔 #단순 #동적 #공익사업</p>
+                                    <p class="desc">
+                                        공기업의 깔끔하고 직관적인 레이아웃에 간소화된 depth.<br>
+                                        두 가지를 모두 배울 수 있는 페이지는 없을까? 고민하다 발견한<br>
+                                        카카오 재단에서 운영하는 브라이언임팩트 사이트를 클론 코딩했습니다.
+                                    </p>
+                                    <div class="typeArea">
+                                        <strong class="type">Type: 고정형</strong>
+                                        <strong class="size">=> 1920px : PC 버전</strong>
+                                        <strong class="tools">html, css, javascript</strong>
+                                        <strong class="contribution">작업 기여도: 100% (퍼블리싱)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section id="proposal">
+            <div class="smidaTextArea contentsText">
+                <p class="s_title">자체 기획 &lt;오디오북 플랫폼&gt;</p>
+                <h2><img src="img/smida_logo.png" alt="스미다(smida)"></h2>
+                <p class="hashtag">#힐링 #휴식 #아기자기한 #눈이 편안한</p>
+                <p class="desc">
+                    출퇴근할 때부터 자기 전까지 자기계발에 몰두하는 시대! <br>
+                    해외에서는 등장 이후로 끊임없이 인기를 모으고 있는 오디오북 시장이 국내에서는 유독 부진하다고 생각하여 <br>
+                    국가 통계자료, 논문 등을 통해 원인을 확인하고 분석하여 만든 플랫폼입니다.
+                </p>
+                <ul class="list">
+                    <li>기획부터 화이트모드 디자인 완성까지 약 2달 소요</li>
+                    <li>Tools: Photoshop, Illustrator, Figma 사용</li>
+                    <li>Point Color: #F88043(주황색), #B4C4D9(하늘색)</li>
+                    <li>Font: 나눔스퀘어, EF_제주돌담(로고) 사용</li>
+                    <li>작업 기여도: 100% (기획 / 디자인)</li>
+                    <li class="blueCloud">다크 모드는 아이콘까지 완성 후, 디자인은 미완성</li>
+                </ul>
+                <div class="btnArea">
+                    <a href="proposal_smida.zip" class="viewProposal" download="proposal_smida.zip">기획서 보기</a>
+                    <a href="design_smida.zip" class="viewDesign" download="design_smida.zip">디자인 보기</a>
+                </div>
+            </div>
+            <div class="mockupArea">
+                <img src="img/clouttoncandydeco/clouttonCandy_ellipse.png" alt="ellipse" class="deco"
+                    style="transform: rotate(-45deg);">
+                <img src="img/smidaMockup.png" alt="스미다 all 목업" class="smidaAll">
+                <img src="img/clouttoncandydeco/clouttonCandy.png" alt="round square" class="deco"
+                    style="transform: rotate(63deg);">
+                <div class="smidaMobile">
+                    <img src="img/smida/listening.png" alt="listening" class="smida">
+                    <img src="img/smida/readingModal.png" alt="readingModal" class="smida">
+                    <img src="img/smida/reading.png" alt="reading" class="smida">
+                    <img src="img/smida/detail.png" alt="detail" class="smida">
+                    <img src="img/smida/mypage.png" alt="mypage" class="smida">
+                    <img src="img/smida/record.png" alt="record" class="smida">
+                    <img src="img/smida/search.png" alt="search" class="smida">
+                    <img src="img/smida/challenge.png" alt="challenge" class="smida">
+                    <img src="img/smida/home.png" alt="home" class="smida">
+                    <img src="img/smida/login.png" alt="login" class="smida">
+                    <img src="img/smida/intro.png" alt="intro" class="smida">
+                </div>
+            </div>
+        </section>
+        <section id="design">
+            <div class="wrapDesign">
+                <div class="designTop">
+                    <div class="imgWrapper"><img src="img/designArtwork.png" alt="design artwork"></div>
+                    <!-- Swiper -->
+                    <div class="swiper myDesign">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-tab="1">
+                                <figure>
+                                    <img src="img/smida_icon.png" alt="스미다 icon">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-tab="2">
+                                <figure>
+                                    <img src="img/galon popup design.png" alt="galon 팝업 디자인">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-tab="3">
+                                <figure>
+                                    <img src="img/email popup.png" alt="이메일 팝업">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-tab="4">
+                                <figure>
+                                    <img src="img/clouttonCandy.png" alt="구름사탕 디자인">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-tab="5">
+                                <figure>
+                                    <img src="img/alex muller promotion design.png" alt="알렉스 물러 프로모션 디자인">
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-tab="6">
+                                <figure>
+                                    <img src="img/RASA MALU.png" alt="라사 말루 디자인">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab" data-content="1">
+                        <figure>
+                            <img src="img/smida_icon.png" alt="스미다 메인 아이콘 디자인">
+                        </figure>
+                        <div class="contentsText">
+                            <span class="cateblue">오디오북 플랫폼 메인 아이콘 디자인</span>
+                            <h2 class="projectName">스미다 (SMIDA)</h2>
+                            <p class="hashtag">#휴식 #여유 #달 #별 #대나무발</p>
+                            <strong class="tools">Tools: Photoshop</strong>
+                            <strong class="contribution">작업 기여도: 100% (기획 / 디자인)</strong>
+                            <p class="desc">
+                                오디오북을 주로 감상하는 시간대를 조사하여 독서 플랫폼 이용의 심 목적으로 <br>
+                                휴식, 힐링, 여유, 쉼, 자기계발 등이 도출되었고,<br>
+                                키워드들을 토대로 밤을 상징하는 <strong>달</strong>과 <strong>별</strong>, 그리고 살랑살랑 흔들리는
+                                <strong>대나무발</strong>을<br> 접목시켜 상징적인 아이콘 디자인을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab" data-content="2">
+                        <figure>
+                            <img src="img/galon popup design.png" alt="galon 팝업 디자인">
+                        </figure>
+                        <div class="contentsText">
+                            <span class="cateblue">디자인 가구 기획전 팝업 디자인</span>
+                            <h2 class="projectName">GALON</h2>
+                            <p class="hashtag">#휴식 #여유 #달 #별 #대나무발</p>
+                            <strong class="tools">Tools: Photoshop</strong>
+                            <strong class="contribution">작업 기여도: 100% (기획 / 디자인)</strong>
+                            <p class="desc">
+                                오디오북을 주로 감상하는 시간대를 조사하여 독서 플랫폼 이용의 심 목적으로 <br>
+                                휴식, 힐링, 여유, 쉼, 자기계발 등이 도출되었고,<br>
+                                키워드들을 토대로 밤을 상징하는 <strong>달</strong>과 <strong>별</strong>, 그리고 살랑살랑 흔들리는
+                                <strong>대나무발</strong>을<br> 접목시켜 상징적인 아이콘 디자인을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab" data-content="3">
+                        <figure>
+                            <img src="img/email popup.png" alt="이메일 팝업">
+                        </figure>
+                        <div class="contentsText">
+                            <span class="cateblue">모던스타일 표지 디자인</span>
+                            <h2 class="projectName">WELCOME</h2>
+                            <p class="hashtag">#휴식 #여유 #달 #별 #대나무발</p>
+                            <strong class="tools">Tools: Photoshop</strong>
+                            <strong class="contribution">작업 기여도: 100% (기획 / 디자인)</strong>
+                            <p class="desc">
+                                오디오북을 주로 감상하는 시간대를 조사하여 독서 플랫폼 이용의 심 목적으로 <br>
+                                휴식, 힐링, 여유, 쉼, 자기계발 등이 도출되었고,<br>
+                                키워드들을 토대로 밤을 상징하는 <strong>달</strong>과 <strong>별</strong>, 그리고 살랑살랑 흔들리는
+                                <strong>대나무발</strong>을<br> 접목시켜 상징적인 아이콘 디자인을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab" data-content="4">
+                        <figure>
+                            <img src="img/clouttonCandy.png" alt="구름사탕 디자인">
+                        </figure>
+                        <div class="contentsText">
+                            <span class="cateblue">개인 마스코트 디자인</span>
+                            <h2 class="projectName">구름사탕 (ClouttonCandy)</h2>
+                            <p class="hashtag">#휴식 #여유 #달 #별 #대나무발</p>
+                            <strong class="tools">Tools: Illustrator</strong>
+                            <strong class="contribution">작업 기여도: 100% (기획 / 디자인)</strong>
+                            <p class="desc">
+                                오디오북을 주로 감상하는 시간대를 조사하여 독서 플랫폼 이용의 심 목적으로 <br>
+                                휴식, 힐링, 여유, 쉼, 자기계발 등이 도출되었고,<br>
+                                키워드들을 토대로 밤을 상징하는 <strong>달</strong>과 <strong>별</strong>, 그리고 살랑살랑 흔들리는
+                                <strong>대나무발</strong>을<br> 접목시켜 상징적인 아이콘 디자인을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab" data-content="5">
+                        <figure>
+                            <img src="img/alex muller promotion design.png" alt="알렉스 물러 프로모션 디자인">
+                        </figure>
+                        <div class="contentsText">
+                            <span class="cateblue">소파 프로모션 페이지 디자인</span>
+                            <h2 class="projectName">ALEX MULLER</h2>
+                            <p class="hashtag">#휴식 #여유 #달 #별 #대나무발</p>
+                            <strong class="tools">Tools: Photoshop</strong>
+                            <strong class="contribution">작업 기여도: 100% (기획 / 디자인)</strong>
+                            <p class="desc">
+                                오디오북을 주로 감상하는 시간대를 조사하여 독서 플랫폼 이용의 심 목적으로 <br>
+                                휴식, 힐링, 여유, 쉼, 자기계발 등이 도출되었고,<br>
+                                키워드들을 토대로 밤을 상징하는 <strong>달</strong>과 <strong>별</strong>, 그리고 살랑살랑 흔들리는
+                                <strong>대나무발</strong>을<br> 접목시켜 상징적인 아이콘 디자인을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab" data-content="6">
+                        <figure>
+                            <img src="img/RASA MALU.png" alt="라사 말루 디자인">
+                        </figure>
+                        <div class="contentsText">
+                            <span class="cateblue">모바일 블로그 페이지 디자인</span>
+                            <h2 class="projectName">RASA MALU</h2>
+                            <p class="hashtag">#휴식 #여유 #달 #별 #대나무발</p>
+                            <strong class="tools">Tools: Photoshop</strong>
+                            <strong class="contribution">작업 기여도: 100% (기획 / 디자인)</strong>
+                            <p class="desc">
+                                오디오북을 주로 감상하는 시간대를 조사하여 독서 플랫폼 이용의 심 목적으로 <br>
+                                휴식, 힐링, 여유, 쉼, 자기계발 등이 도출되었고,<br>
+                                키워드들을 토대로 밤을 상징하는 <strong>달</strong>과 <strong>별</strong>, 그리고 살랑살랑 흔들리는
+                                <strong>대나무발</strong>을<br> 접목시켜 상징적인 아이콘 디자인을 만들었습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="mascot">
+                <img src="img/clouttonCandy.png" alt="구름사탕" class="clouttonCandy">
+                <img src="img/clouttonCandy.png" alt="구름사탕" class="clouttonCandy2">
+            </div>
+            <div class="contactMain">
+                <div class="contactText">
+                    <p>
+                        깔끔한 디자인에 <strong>사랑스러움을 한 스푼,</strong><br>
+                        조금씩 덜어냄의 미학을 배우고 있습니다. <br>
+                        행복을 공유하는 디자이너이자 퍼블리셔, <strong>정주리</strong>입니다.
+                    </p>
+                    <img src="img/thankYou.png" alt="thank you">
+                    <div class="memo">
+                        <div class="memoText">
+                            <strong class="b_contact">CONTACT )</strong>
+                            <i>언제든지 연락주세요 :D</i>
+                            <p class="e-mail">timh2@kakao.com</p>
+                            <p class="phone">010-5118-7196</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactImg"><img src="img/contactMe.png" alt="contactme"></div>
+            </div>
+
+            <footer>
+                <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                <span class="copy">Copyright &copy;Ju-ri JUNG. All Rights Reserved. 2024</span>
+            </footer>
+        </section>
     </div>
-    <ul class="web">
-        <li>
-            <a href="web/koreahouse/index.html" target="_blank">한국의 집</a>
-        </li>
-        <li>
-            <a href="web/rbfy/index.html" target="_blank">rbfy</a>
-        </li>
-    </ul>
+    <div class="backToTop" style="display: none;"></div>
+
+
+    <script src="js/portfolio.js"></script>
 </body>
+
 </html>

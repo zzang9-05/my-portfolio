@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+html    {
+    font-size: 20px;
+}
+/* 공통 */
+.inner {
+    width: 100%;
+    padding: 0 6.05rem; /* 121px */
+    box-sizing: border-box;
+}
+
+#topbar {
+    display: block;
+    width: 100%;
+    height: 0.25rem; /* 5px */
+    background: #1E2D37;
+}
+
+/* header */
+header  {
+    position: relative;
+    padding: 3.8rem 0; /* 90px */
+}
+header > div   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div h1 a {display: block;}
+header > div h1 img {
+    display: block;
+    width: 6.85rem; /* 137px */
+}
+header > div nav    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div nav .lang  {
+    padding: 0.75rem 0.62rem; /* 12px 9.6px */
+    margin-right: 3rem; /* 60px */
+    border: 1px solid #1e2d37;
+    color: #1E2D37;
+    line-height: 0.8rem; /* 16px */
+    font-size: 0.8rem; /* 16px */
+    font-weight: 600;
+    box-sizing: border-box;
+}
+header > div nav .lang:hover    {
+    background: #1E2D37;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+header > div nav .btn_menu  {
+    position: relative;
+    width: 1.5em; /* 30px */
+    height: 1rem; /* 20px */
+    margin-right: 0.3rem;
+    background: #fff;
+    cursor: pointer;
+}
+header > div nav .btn_menu .top::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 6px);
+    transform: translateY(-50% + 6px);
+    width: 80%;
+    height: 1.5px;
+    background: #1E2D37;
+}
+header > div nav .btn_menu .center::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 1.5px;
+    background: #1E2D37;
+}
+header > div nav .btn_menu .bottom::before {
+    content: '';
+    position: absolute;
+    top: calc(50% + 6px);
+    transform: translateY(-50% - 6px);
+    width: 53%;
+    height: 1.5px;
+    background: #1E2D37;
+}
+.menu_list {
+    position: absolute;
+    top: 3rem; right: 5rem;
+    z-index: 5;
+    width: 21rem;
+    background: #fff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-sizing: border-box;
+
+    display: none;
+    opacity: 1;
+}
+.menu_list > p {
+    position: absolute;
+    top: 0.3rem; right: 1.5rem;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.menu_list > ul > li    {
+    width: 80%;
+    padding: 1.5rem 1.5rem 1.6rem;
+    box-sizing: border-box;
+}
+.menu_list > ul > li:hover  {
+    background: #f2f5F7;
+}
+.menu_list > ul > li h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.menu_list > ul > li .sub   {
+    width: 100%;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.8rem;
+    word-break: keep-all;
+}
+/* //header */
+
+
+/* btn_top */
+#btn_top    {
+    position: fixed;
+    bottom: 6.05rem; right: 6.05rem; /* 121px */
+    z-index: 5;
+    width: 2.5rem;
+    height: 2.2rem;
+    border: 1px solid #1E2D37;
+    border-radius: 0;
+    background: #fff;
+    font-size: 0.65rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    
+    display: none;
+}
+#btn_top:hover  {
+    background: #1E2D37;
+    border: 1px solid #fff;
+    color: #fff;
+}
+#btn_top.on {
+    display: block;
+    cursor: pointer;
+}
+
+/* footer */
+footer  {
+    width: 100%;
+    height: 36vh;
+    padding: 2rem;
+    background: #1E2D37;
+    box-sizing: border-box;
+}
+footer > h1 {
+    display: block;
+    width: 6.85rem; /* 137px */
+    margin-bottom: 1rem;
+}
+footer > h1 a img {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2rem;
+    opacity: 0.8;
+}
+footer > .footer_text   {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+footer .copy    {
+    margin: 1rem 0;
+}
+footer > .btn_public    {
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    border: 1px solid #dce3e8;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.95rem;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+}
+footer > .btn_public::after    {
+    content: '';
+    position: absolute;
+    top: 50%; right: 0.5rem;
+    transform: translateY(-50%);
+    z-index: 6;
+    width: 1.4rem; height: 1.4rem;
+    background: url(../img/icon/icon_btn_public_arrow.png) no-repeat center/cover;
+    opacity: 0.8;
+}

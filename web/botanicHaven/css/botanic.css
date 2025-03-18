@@ -1,0 +1,335 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* header */
+header  {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 4%;
+    background: #f2f2f0;
+    border-bottom: 4px solid #4D8C5D;
+    /* 여기까지는 디자인 */
+    z-index: 50;
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.btn_mobile   {
+    position: absolute;
+    top: 22px; right: 20px;
+    width: 36px; height: 36px;
+    z-index: 100;
+    display: none;
+}
+.btn_mobile img {
+    max-width: 100%;
+}
+
+/* header -logo */
+header .logo    {
+    width: auto;
+    height: 100%;
+}
+header .logo > a    {
+    display: block;
+    font-family: "Righteous", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #4D8C5D;
+    line-height: 80px;
+}
+
+/* header -gnb */
+header .nav_inner   {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.nav_inner .gnb {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav_inner .gnb > li  {
+    position: relative;
+    width: calc(100%/5);
+}
+.nav_inner .gnb > li > a    {
+    display: block;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+.nav_inner .gnb > li > a:hover    {
+    color: #4D8C5D;
+}
+.nav_inner .gnb .sub    {
+    position: absolute;
+    top: 80px; left: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(77, 140, 80, 0.8);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    display: none;
+}
+.nav_inner .gnb > li:hover .sub {
+    display: block;
+}
+.nav_inner .gnb .sub a  {
+    display: block;
+    text-align: center;
+    line-height: 36px;
+}
+.nav_inner .gnb .sub a:hover {
+    color: #4D8C5D;
+}
+
+/* header -sns */
+.nav_inner .sns_area {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_inner .sns_area > a {
+    width: calc(100%/3);
+    margin-left: 20px;
+}
+.nav_inner .sns_area img {
+    width: 34px
+}
+
+/* swiper */
+.swiper.main_visual {
+    position: relative;
+    height: 70vh;
+    margin-bottom: 50px;
+}
+.swiper.main_visual .swiper-slide   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: no-repeat center/cover;
+}
+.swiper.main_visual .swiper-slide.bg01  {
+    background-image: url(../img2/slide_main01.png);
+}
+.swiper.main_visual .swiper-slide.bg02  {
+    background-image: url(../img2/slide_main02.png);
+}
+.swiper.main_visual .swiper-slide.bg03  {
+    background-image: url(../img2/slide_main03.png);
+}
+
+.swiper-slide .title_area   {
+    width: 35%;
+    padding: 25px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+}
+.swiper-slide .title_area .m_title  {
+    font-size: 50px;
+    font-weight: 600;
+    color: #dbf227;
+    margin-bottom: 15px;
+}
+.swiper-slide .title_area .m_text   {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #f2f2f0;
+}
+
+/* section */
+.inner  {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section {
+    padding: 80px 0;
+}
+section h2  {
+    font-family: "Righteous", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 40px;
+}
+section figure  {
+    margin-bottom: 20px;
+    background: no-repeat center/cover;
+}
+section ul  {
+    display: flex;
+    justify-content: space-between;
+}
+section .text   {
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+/* section-new_product */
+.new_product_list   {margin-bottom: 40px;}
+.new_product_list li    {
+    width: 23%;
+    padding: 20px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+.new_product_list li:hover  {
+    border-color: #4D8C5D;
+}
+.new_product_list li figure {
+    height: 300px;
+}
+.new_product_list li figure.new_pic01   {
+    background-image: url(../img2/img_plant01.jpg);
+}
+.new_product_list li figure.new_pic02   {
+    background-image: url(../img2/img_plant02.jpg);
+}
+.new_product_list li figure.new_pic03   {
+    background-image: url(../img2/img_plant03.jpg);
+}
+.new_product_list li figure.new_pic04   {
+    background-image: url(../img2/img_plant04.jpeg);
+}
+.new_product_list .text_area .cate  {
+    margin-bottom: 20px;
+}
+.new_product_list .text_area span   {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    background: #352113;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* button */
+.btn_area   {
+    text-align: center;
+}
+.btn_area > a   {
+    position: relative;
+    display: inline-block;
+    padding: 14px 60px;
+    background: #352113;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn_area > a::before    {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 0;
+    height: 100%;
+    background: #4D8C5D;
+    transition: all 0.3s;
+}
+.btn_area > a:hover::before {
+    width: 100%;
+}
+.btn_area > a > span    {
+    position: relative;
+    z-index: 2; /* z-index는 포지션이 선언되어야 사용 가능하며 position: relative는 위치가 변하지 않으므로 좋음! */
+}
+
+/* event */
+#event  {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../img2/img_main01.jpg) fixed no-repeat center/cover; /* fixed는 background-position의 값 */
+}
+#event .inner   {
+    display: flex;
+    flex-direction: column; /* column 세로정렬/row 가로정렬 */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+#event strong   {
+    margin-bottom: 20px;
+    font-size: 54px;
+    color: #f2cb05;
+}
+#event .s_text  {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#event .desc    {
+    font-size: 20px;
+    text-align: center;
+}
+#event .desc span   {
+    display: block; /* display 속성은 자식관계에만 물려받을 수 있고, 조손관계에서는 불가능함! */
+}
+
+/* interior */
+#interior li    {
+    width: 22%;
+    text-align: center;
+}
+#interior li figure {
+    margin: 20px auto 30px; /* block 요소인 figure를 중앙정렬하기 위해 좌우 auto가 들어감! */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: url(../img2/img_planteria01.PNG) no-repeat center/cover;
+}
+#interior li figure.inter_pic02 {
+    background-image: url(../img2/img_planteria02.PNG);
+}
+#interior li figure.inter_pic03 {
+    background-image: url(../img2/img_planteria03.PNG);
+}
+#interior li figure.inter_pic04 {
+    background-image: url(../img2/img_planteria04.PNG);
+}
+#interior li .title    {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* footer */
+footer  {
+    padding: 25px 0;
+    background-color: rgba(53, 33, 19, 0.5);
+    color: rgba(255, 255, 255, 0.6);
+}
+footer .inner   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .inner .flogo    {
+    font-family: "Righteous", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+footer .inner .f_right  {
+    font-size: 15px;
+    text-align: right;
+}
+footer .inner .f_right address  {
+    margin-bottom: 15px;
+}
+footer .inner .f_right .call    {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
